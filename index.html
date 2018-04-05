@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Teste Técnico - Laboratória">
+    <meta name="author" content="Silvia Coelho">
+    <title>Nural do Facebook</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="js/jquery.js"></script> -->
+    <!-- <script src="js/login.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login">
+        <div class="login-screen">
+
+            <div class="app-title">
+                <h1>Login</h1>
+            </div>
+
+            <form class="login-form" method="post" name="myform">
+                <div class="control-group">
+                    <label>Email:</label>
+                    <input type="email" class="login-field" value="" placeholder="" id="login-name" required>
+                    <span id="emailValid"></span>
+                </div>
+
+                <div class="control-group">
+                    <label>Password:</label>
+                    <input type="password" class="login-field" value="" placeholder="" id="login-pass" required>
+                    <span id="passwordValid"></span>
+                </div>
+
+                <a class="btn btn-primary btn-large btn-block" href="#" onclick="validate()">Login</a>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    
+    <!-- firebase sdk link goes here -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBYNVCxPsWbmq1rijkFyJLDhs1J8U5SHfA",
+            authDomain: "mural-da-laboratoria.firebaseapp.com",
+            databaseURL: "https://mural-da-laboratoria.firebaseio.com",
+            projectId: "mural-da-laboratoria",
+            storageBucket: "mural-da-laboratoria.appspot.com",
+            messagingSenderId: "1091168179157"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>
