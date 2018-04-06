@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Teste Técnico - Laboratória">
+    <meta name="author" content="Silvia Coelho">
+    <title>Mural do Facebook</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="col-xs-12 col-sm-7" id="new_status">
+        <div class="col-xs-12" id="post_content">
+            <textarea id="postId" name="message" class="col-xs-12" rows="10" placeholder="No que você está pensando?"></textarea>
+        </div>
+        <div class="col-xs-12" id="post_footer">
+            <select name="privacy" class="btn btn-default">
+                <option value="1" selected="selected">Amigos</option>
+                <option value="2">Público</option>
+                <option value="3">Apenas eu</option>
+            </select>
+            <input type="submit" name="submit" value="Publicar" onclick="readPost()" class="btn btn-default">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/post.js"></script>
+
+</body>
+
+</html>

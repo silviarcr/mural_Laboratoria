@@ -3,6 +3,32 @@ body {
     background-color: #3498DB;
     padding: 50px;
 }
+#new_status {
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 1px 0 10px #AAA;
+    margin-top: 1rem;
+    padding: 0;
+ }
+ #post_content {
+    margin: 2% 2%;
+    padding: 0;
+    width: 95.75%;
+}
+#post_footer {
+    padding: 0 2% 0 4%;
+    margin-bottom: 0.75rem;
+    display: inline;
+}
+#post_footer .btn {
+    border-radius: 2px;
+    line-height: 2.2rem;
+    margin-top: 0.75rem;
+    padding: 0 0.75rem;
+  }
+#post_footer .btn-default {
+    margin-right: 0.5rem;
+}
 .login {
     margin: 20px auto;
     width: 300px;
