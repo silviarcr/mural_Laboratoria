@@ -1,5 +1,5 @@
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto Sans', sans-serif;
     background-color: #3498DB;
     padding: 50px;
 }
@@ -7,8 +7,12 @@ body {
     background-color: #FFF;
     border-radius: 5px;
     box-shadow: 1px 0 10px #AAA;
-    margin-top: 1rem;
     padding: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 50%;
  }
  #post_content {
     margin: 2% 2%;
@@ -28,6 +32,10 @@ body {
   }
 #post_footer .btn-default {
     margin-right: 0.5rem;
+}
+#post_footer .align-btn {
+    display: inline;
+    float: right;
 }
 .login {
     margin: 20px auto;

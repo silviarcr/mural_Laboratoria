@@ -3,4 +3,7 @@ function readPost() {
     if (post=="" || post==null) {
         document.getElementById('postId').placeholder = "Não foi possível publicar seu post!";
     }
+    else{
+        
+    }
 }

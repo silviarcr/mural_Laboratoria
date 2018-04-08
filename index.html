@@ -1,44 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Teste Técnico - Laboratória">
     <meta name="author" content="Silvia Coelho">
-    <title>Mural do Facebook</title>
+    <title>Mural da Laboratória</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-    <!-- <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script> -->
-    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
-
-</head>
-
-<body>
-    <div class="login">
-        <div class="login-screen">
-
-            <div class="app-title">
-                <h1>Login</h1>
-            </div>
-
-            <form class="login-form" method="POST" name="myform">
-                <div class="control-group">
-                    <label>Email:</label>
-                    <input type="email" class="login-field" value="" placeholder="" id="login-name" required>
-                    <span id="emailValid"></span>
-                </div>
-
-                <div class="control-group">
-                    <label>Senha:</label>
-                    <input type="password" class="login-field" value="" placeholder="" id="login-pass" required>
-                    <span id="passwordValid"></span>
-                </div>
-
-                <a class="btn btn-primary btn-large btn-block" href="#" onclick="validate()">Login</a>
-            </form>
-
-        </div>
-    </div>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
 
     <script> 
         var config = {
@@ -51,8 +25,39 @@
         };
         firebase.initializeApp(config);
     </script>
+</head>
+
+<body>
+    <div class="login">
+        <div class="login-screen">
+
+            <div class="app-title">
+                <h1>Login</h1>
+            </div>
+
+            <!-- <form class="login-form" name="myform" action="mural.html" onsubmit="return validate()" method="GET"> -->
+            <form class="login-form" name="myform" action="" method="GET">
+                <div class="control-group">
+                    <label>Email:</label>
+                    <input type="email" class="login-field" value="" placeholder="" id="login-name">                    <span id="emailValid"></span>
+                </div>
+
+                <div class="control-group">
+                    <label>Senha:</label>
+                    <input type="password" class="login-field" value="" placeholder="" id="login-pass" required>
+                    <span id="passwordValid"></span>
+                </div>
+
+                <input type="submit" class="btn btn-primary btn-large btn-block" onclick="validate()" value="Login">
+                <input type="hidden" name="userId" id="user-id">
+            </form>
+
+        </div>
+    </div>
+
     <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
+    <!-- <script type="text/javascript" src="js/login.js"></script> -->
+    <script src="js/login.js"></script>
 </body>
 
 </html>
